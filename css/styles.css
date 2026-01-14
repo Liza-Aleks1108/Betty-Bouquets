@@ -38,3 +38,10 @@ body {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
+
+.footer {
+  text-align: center;
+  padding: 24px 16px;
+  font-size: 14px;
+  color: #666;
+}
