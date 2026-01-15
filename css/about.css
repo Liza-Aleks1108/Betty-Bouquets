@@ -1,0 +1,169 @@
+/* =========================
+   BASE / RESET
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVIGATION (mobile first)
+========================= */
+.navbar {
+  display: flex;
+  flex-direction: column; /* mobile layout */
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  overflow: hidden;
+}
+
+/* background image */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.headertitle {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.headersubtitle {
+  max-width: 700px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* =========================
+   ABOUT CONTENT
+========================= */
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.about-section ul {
+  padding-left: 1.2rem;
+}
+
+.about-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  text-align: center;
+  padding: 24px 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* =========================
+   TABLET (≥ 768px)
+========================= */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .headertitle {
+    font-size: 2.6rem;
+  }
+}
+
+/* =========================
+   DESKTOP (≥ 1024px)
+========================= */
+@media (min-width: 1024px) {
+  .headertitle {
+    font-size: 3rem;
+  }
+
+  .about {
+    padding: 4rem 2rem;
+  }
+}
