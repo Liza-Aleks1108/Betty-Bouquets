@@ -1,0 +1,269 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
+:root {
+  --primary-color: #d24d57;
+  --primary-hover: #a83642;
+
+  --bg-main: #fafafa;
+  --bg-white: #ffffff;
+
+  --text-main: #222;
+  --text-muted: #666;
+
+  --border-color: #e5e5e5;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* =========================
+   HEADER / NAVIGATION
+========================= */
+header {
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column; /* mobile: menu under logo */
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* mobile */
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   MAIN (for sticky footer)
+========================= */
+
+/* =========================
+   CONTACT PAGE
+========================= */
+#contact {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-title h1 {
+  font-size: 2.4rem;
+  color: var(--primary-color);
+}
+
+.contact-title p {
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+/* =========================
+   CONTACT GRID
+========================= */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+/* =========================
+   CONTACT INFO
+========================= */
+.contact-info {
+  background: var(--bg-white);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+.contact-info h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin-bottom: 0.8rem;
+  color: var(--text-muted);
+}
+
+.contact-info a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FORM CARD
+========================= */
+.contact-form-wrapper {
+  background: var(--bg-white);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form-wrapper h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* =========================
+   FORM
+========================= */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.contact-form label {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(210, 77, 87, 0.15);
+}
+
+.contact-form button {
+  margin-top: 0.5rem;
+  padding: 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   FOOTER (sticky)
+========================= */
+.footer {
+  text-align: center;
+  padding: 24px 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* =========================
+   TABLET ≥ 768px
+========================= */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row; /* logo + menu in one line */
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    /* gap: 2rem; */
+  }
+}
+
+/* =========================
+   DESKTOP ≥ 1024px
+========================= */
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 2rem 5rem;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: start;
+  }
+
+  .contact-title h1 {
+    font-size: 3rem;
+  }
+}
