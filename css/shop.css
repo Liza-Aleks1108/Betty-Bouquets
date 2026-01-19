@@ -463,3 +463,92 @@ footer {
     height: 150px;
   }
 }
+
+/* Modal */
+#thankyou-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#thankyou-modal .modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+#thankyou-modal input[type="tel"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 1rem 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+#thankyou-modal .modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#thankyou-modal button {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  border-radius: var(--radius-md);
+  background-color: var(--orange);
+  color: var(--text-light);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#thankyou-modal button:hover {
+  background-color: var(--yellow);
+}
+
+.error-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.error-modal .modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 350px;
+}
+
+.error-modal button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #f57e20;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.error-modal button:hover {
+  background-color: #ffde17;
+}

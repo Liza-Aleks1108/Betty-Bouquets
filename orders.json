@@ -1,0 +1,87 @@
+[
+  {
+    "phone": "+3874918069",
+    "items": [
+      {
+        "flower": "Red Roses",
+        "quantity": 3,
+        "price": 3
+      },
+      {
+        "flower": "White Roses",
+        "quantity": 2,
+        "price": 3
+      },
+      {
+        "flower": "Pink Roses",
+        "quantity": 5,
+        "price": 3
+      },
+      {
+        "flower": "add-greenery",
+        "quantity": 1,
+        "price": 5
+      },
+      {
+        "flower": "add-wrapping",
+        "quantity": 1,
+        "price": 3
+      },
+      {
+        "flower": "add-card",
+        "quantity": 1,
+        "price": 4
+      }
+    ],
+    "total": "€42.00",
+    "date": "2026-01-19T17:34:32.416Z"
+  },
+  {
+    "phone": "+3874918060",
+    "items": [
+      {
+        "flower": "Blue Hydrangeas",
+        "quantity": 8,
+        "price": 5
+      }
+    ],
+    "total": "€40.00",
+    "date": "2026-01-19T17:36:46.399Z"
+  },
+  {
+    "phone": "+357689589",
+    "items": [
+      {
+        "flower": "Blue Hydrangeas",
+        "quantity": 1,
+        "price": 5
+      }
+    ],
+    "total": "€5.00",
+    "date": "2026-01-19T17:37:04.857Z"
+  },
+  {
+    "phone": "+3875678908",
+    "items": [
+      {
+        "flower": "Sunflowers",
+        "quantity": 5,
+        "price": 3.5
+      }
+    ],
+    "total": "€17.50",
+    "date": "2026-01-19T17:38:07.634Z"
+  },
+  {
+    "phone": "+3876787578",
+    "items": [
+      {
+        "flower": "Pink Gerberas",
+        "quantity": 3,
+        "price": 2.8
+      }
+    ],
+    "total": "€8.40",
+    "date": "2026-01-19T17:42:19.572Z"
+  }
+]
