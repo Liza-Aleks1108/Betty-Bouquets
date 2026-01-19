@@ -38,8 +38,8 @@
               src="./assets/images/ready-bouquets/RomanticBouquet.webp"
               alt="Romantic Bouquet"
             />
-            <h3>Romantic Bouquet</h3>
-            <p>€60</p>
+            <h3>Romantic Bouquet with gift set</h3>
+            <p>€120</p>
             <button class="buy-btn">Buy</button>
           </div>
 
@@ -72,7 +72,7 @@
               alt="Sunshine Tulips"
             />
             <h3>Sunshine Tulips</h3>
-            <p>€22</p>
+            <p>€25</p>
             <button class="buy-btn">Buy</button>
           </div>
 
@@ -82,8 +82,8 @@
               src="./assets/images/ready-bouquets/Elegant Lilies.webp"
               alt="Elegant Lilies"
             />
-            <h3>Elegant Lilies</h3>
-            <p>€38</p>
+            <h3>Elegant Lilies with gift set</h3>
+            <p>€80</p>
             <button class="buy-btn">Buy</button>
           </div>
 
@@ -123,144 +123,363 @@
       </section>
 
       <!-- Custom bouquet -->
-      <section id="custom-bouquet">
-        <h2>Build Your Own Bouquet</h2>
+      <section id="custom-bouquet" class="custom-bouquet">
+        <div class="section-header">
+          <h2>Build Your Own Bouquet</h2>
+          <p>
+            Create a bouquet as unique as your story. Choose your favourite
+            flowers, mix colours, decide the quantity of each bloom and let us
+            hand-tie your perfect bouquet with care and attention to detail.
+          </p>
+          <p class="note">
+            You are in full control — from soft pastels to bold colour
+            contrasts. Fresh flowers, beautifully arranged, just the way you
+            want them.
+          </p>
+        </div>
+
+        <div class="recommended-bouquets">
+          <h3>Recommended Combinations</h3>
+          <p class="recommended-subtitle">
+            Not sure where to start? Our florists recommend these beautiful
+            combinations.
+          </p>
+
+          <div class="recommended-grid">
+            <div class="recommended-card">
+              <h4>Romantic Classic</h4>
+              <p>Red & White Roses with soft greenery</p>
+              <span class="price-hint">From €30</span>
+            </div>
+
+            <div class="recommended-card">
+              <h4>Soft Pastels</h4>
+              <p>Pink Roses, Peonies and White Daisies</p>
+              <span class="price-hint">From €35</span>
+            </div>
+
+            <div class="recommended-card">
+              <h4>Sunny Mood</h4>
+              <p>Sunflowers, Yellow Tulips and Daisies</p>
+              <span class="price-hint">From €28</span>
+            </div>
+
+            <div class="recommended-card">
+              <h4>Elegant Touch</h4>
+              <p>White Lilies and Blue Hydrangeas</p>
+              <span class="price-hint">From €40</span>
+            </div>
+          </div>
+        </div>
+
         <form id="bouquet-builder">
-          <!-- 15 flower types -->
-          <div class="flower-option">
-            <label>Roses:</label>
-            <select name="rose-color">
-              <option value="red">Red</option>
-              <option value="pink">Pink</option>
-              <option value="white">White</option>
-            </select>
-            <input type="number" name="rose-qty" min="0" value="0" />
+          <!-- ROSES -->
+          <div class="flower-card">
+            <h3>Roses</h3>
+            <p class="flower-desc">Classic, romantic and timeless.</p>
+
+            <div class="color-row">
+              <span class="color-dot red"></span>
+              <label>Red</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="Red Roses"
+                data-price="3"
+              />
+            </div>
+
+            <div class="color-row">
+              <span class="color-dot white"></span>
+              <label>White</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="White Roses"
+                data-price="3"
+              />
+            </div>
+
+            <div class="color-row">
+              <span class="color-dot pink"></span>
+              <label>Pink</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="Pink Roses"
+                data-price="3"
+              />
+            </div>
           </div>
 
-          <div class="flower-option">
-            <label>Lilies:</label>
-            <select name="lily-color">
-              <option value="white">White</option>
-              <option value="pink">Pink</option>
-            </select>
-            <input type="number" name="lily-qty" min="0" value="0" />
+          <!-- LILIES -->
+          <div class="flower-card">
+            <h3>Lilies</h3>
+            <p class="flower-desc">Elegant blooms with a delicate fragrance.</p>
+
+            <div class="color-row">
+              <span class="color-dot white"></span>
+              <label>White</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="White Lilies"
+                data-price="4"
+              />
+            </div>
+
+            <div class="color-row">
+              <span class="color-dot pink"></span>
+              <label>Pink</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="Pink Lilies"
+                data-price="4"
+              />
+            </div>
           </div>
 
-          <div class="flower-option">
-            <label>Tulips:</label>
-            <select name="tulip-color">
-              <option value="yellow">Yellow</option>
-              <option value="red">Red</option>
-            </select>
-            <input type="number" name="tulip-qty" min="0" value="0" />
+          <!-- TULIPS -->
+          <div class="flower-card">
+            <h3>Tulips</h3>
+            <p class="flower-desc">Fresh, joyful and full of spring energy.</p>
+
+            <div class="color-row">
+              <span class="color-dot red"></span>
+              <label>Red</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="Red Tulips"
+                data-price="2.5"
+              />
+            </div>
+
+            <div class="color-row">
+              <span class="color-dot yellow"></span>
+              <label>Yellow</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="Yellow Tulips"
+                data-price="2.5"
+              />
+            </div>
           </div>
 
-          <div class="flower-option">
-            <label>Sunflowers:</label>
-            <select name="sunflower-color">
-              <option value="yellow">Yellow</option>
-            </select>
-            <input type="number" name="sunflower-qty" min="0" value="0" />
+          <!-- SUNFLOWERS -->
+          <div class="flower-card">
+            <h3>Sunflowers</h3>
+            <p class="flower-desc">Bright, bold and full of happiness.</p>
+
+            <div class="color-row">
+              <span class="color-dot yellow"></span>
+              <label>Yellow</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="Sunflowers"
+                data-price="3.5"
+              />
+            </div>
           </div>
 
-          <div class="flower-option">
-            <label>Daisies:</label>
-            <select name="daisy-color">
-              <option value="white">White</option>
-              <option value="yellow">Yellow</option>
-            </select>
-            <input type="number" name="daisy-qty" min="0" value="0" />
+          <!-- DAISIES -->
+          <div class="flower-card">
+            <h3>Daisies</h3>
+            <p class="flower-desc">
+              Light, charming and effortlessly beautiful.
+            </p>
+
+            <div class="color-row">
+              <span class="color-dot white"></span>
+              <label>White</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="White Daisies"
+                data-price="2"
+              />
+            </div>
+
+            <div class="color-row">
+              <span class="color-dot yellow"></span>
+              <label>Yellow</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="Yellow Daisies"
+                data-price="2"
+              />
+            </div>
+          </div>
+          <!-- PEONIES -->
+          <div class="flower-card">
+            <h3>Peonies</h3>
+            <p class="flower-desc">
+              Soft, luxurious blooms loved for special moments.
+            </p>
+
+            <div class="color-row">
+              <span class="color-dot pink"></span>
+              <label>Pink</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="Pink Peonies"
+                data-price="4.5"
+              />
+            </div>
+
+            <div class="color-row">
+              <span class="color-dot white"></span>
+              <label>White</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="White Peonies"
+                data-price="4.5"
+              />
+            </div>
           </div>
 
-          <div class="flower-option">
-            <label>Orchids:</label>
-            <select name="orchid-color">
-              <option value="purple">Purple</option>
-              <option value="white">White</option>
-            </select>
-            <input type="number" name="orchid-qty" min="0" value="0" />
+          <!-- HYDRANGEAS -->
+          <div class="flower-card">
+            <h3>Hydrangeas</h3>
+            <p class="flower-desc">
+              Full, cloud-like flowers that add volume and softness.
+            </p>
+
+            <div class="color-row">
+              <span class="color-dot blue"></span>
+              <label>Blue</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="Blue Hydrangeas"
+                data-price="5"
+              />
+            </div>
+
+            <div class="color-row">
+              <span class="color-dot pink"></span>
+              <label>Pink</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="Pink Hydrangeas"
+                data-price="5"
+              />
+            </div>
           </div>
 
-          <div class="flower-option">
-            <label>Peonies:</label>
-            <select name="peony-color">
-              <option value="pink">Pink</option>
-              <option value="white">White</option>
-            </select>
-            <input type="number" name="peony-qty" min="0" value="0" />
+          <!-- GERBERAS -->
+          <div class="flower-card">
+            <h3>Gerberas</h3>
+            <p class="flower-desc">
+              Bright, cheerful flowers full of positive energy.
+            </p>
+
+            <div class="color-row">
+              <span class="color-dot pink"></span>
+              <label>Pink</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="Pink Gerberas"
+                data-price="2.8"
+              />
+            </div>
+
+            <div class="color-row">
+              <span class="color-dot orange"></span>
+              <label>Orange</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="Orange Gerberas"
+                data-price="2.8"
+              />
+            </div>
           </div>
 
-          <div class="flower-option">
-            <label>Hydrangeas:</label>
-            <select name="hydrangea-color">
-              <option value="blue">Blue</option>
-              <option value="pink">Pink</option>
-            </select>
-            <input type="number" name="hydrangea-qty" min="0" value="0" />
+          <!-- CARNATIONS -->
+          <div class="flower-card">
+            <h3>Carnations</h3>
+            <p class="flower-desc">Long-lasting blooms with classic charm.</p>
+
+            <div class="color-row">
+              <span class="color-dot red"></span>
+              <label>Red</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="Red Carnations"
+                data-price="2.2"
+              />
+            </div>
+
+            <div class="color-row">
+              <span class="color-dot white"></span>
+              <label>White</label>
+              <input
+                type="number"
+                min="0"
+                value="0"
+                data-flower="White Carnations"
+                data-price="2.2"
+              />
+            </div>
+          </div>
+          <div class="extras-card">
+            <h3>Finishing Touches</h3>
+            <p>
+              Would you like us to add soft greenery to your bouquet? It
+              enhances volume and gives a natural, elegant look.
+            </p>
+
+            <label class="checkbox-row">
+              <input type="checkbox" id="add-greenery" data-price="5" />
+              Yes, add soft greenery (+€5)
+            </label>
+            <label class="checkbox-row">
+              <input type="checkbox" id="add-wrapping" data-price="3" />
+              Premium Wrapping (+€3)
+            </label>
+            <label class="checkbox-row">
+              <input type="checkbox" id="add-card" data-price="4" />
+              Handwritten Card (+€4)
+            </label>
           </div>
 
-          <div class="flower-option">
-            <label>Carnations:</label>
-            <select name="carnation-color">
-              <option value="red">Red</option>
-              <option value="white">White</option>
-            </select>
-            <input type="number" name="carnation-qty" min="0" value="0" />
+          <!-- TOTAL -->
+          <div class="bouquet-summary">
+            <p>
+              <strong>Total Price:</strong>
+              <span id="bouquet-price">€0</span>
+            </p>
+            <button type="submit" class="add-to-cart">
+              Add Bouquet to Cart
+            </button>
           </div>
-
-          <div class="flower-option">
-            <label>Irises:</label>
-            <select name="iris-color">
-              <option value="purple">Purple</option>
-              <option value="blue">Blue</option>
-            </select>
-            <input type="number" name="iris-qty" min="0" value="0" />
-          </div>
-
-          <div class="flower-option">
-            <label>Chrysanthemums:</label>
-            <select name="chrysanthemum-color">
-              <option value="yellow">Yellow</option>
-              <option value="white">White</option>
-            </select>
-            <input type="number" name="chrysanthemum-qty" min="0" value="0" />
-          </div>
-
-          <div class="flower-option">
-            <label>Gardenias:</label>
-            <select name="gardenia-color">
-              <option value="white">White</option>
-            </select>
-            <input type="number" name="gardenia-qty" min="0" value="0" />
-          </div>
-
-          <div class="flower-option">
-            <label>Violets:</label>
-            <select name="violet-color">
-              <option value="purple">Purple</option>
-            </select>
-            <input type="number" name="violet-qty" min="0" value="0" />
-          </div>
-
-          <div class="flower-option">
-            <label>Marigolds:</label>
-            <select name="marigold-color">
-              <option value="orange">Orange</option>
-            </select>
-            <input type="number" name="marigold-qty" min="0" value="0" />
-          </div>
-
-          <div class="flower-option">
-            <label>Gerberas:</label>
-            <select name="gerbera-color">
-              <option value="pink">Pink</option>
-              <option value="orange">Orange</option>
-            </select>
-            <input type="number" name="gerbera-qty" min="0" value="0" />
-          </div>
-
-          <p>Total Price: <span id="bouquet-price">€0</span></p>
-          <button type="submit">Add to Cart</button>
         </form>
       </section>
     </main>
