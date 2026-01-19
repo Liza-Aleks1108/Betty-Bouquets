@@ -269,10 +269,6 @@ footer {
    DESKTOP (≥ 1024px)
 ========================= */
 @media (min-width: 1024px) {
-  .navbar {
-    /* padding: 2rem 5rem; */
-  }
-
   .headertitle {
     font-size: 3rem;
   }

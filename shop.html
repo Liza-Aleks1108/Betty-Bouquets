@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - Betty Bouquets</title>
+    <link rel="stylesheet" href="./css/shop.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <object
+            type="image/svg+xml"
+            data="./assets/logo/Betty's Bouquets Graphics.svg"
+            class="logo-svg"
+          ></object>
+        </a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Ready bouquets -->
+      <section id="ready-bouquets">
+        <h2>Ready Bouquets</h2>
+        <div class="bouquet-gallery">
+          <!-- Bouquet 1 -->
+          <div class="bouquet-card">
+            <img
+              src="./assets/images/ready-bouquets/RomanticBouquet.webp"
+              alt="Romantic Bouquet"
+            />
+            <h3>Romantic Bouquet</h3>
+            <p>€60</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+
+          <!-- Bouquet 2 -->
+          <div class="bouquet-card">
+            <img
+              src="./assets/images/ready-bouquets/SpringDriedFieldBouquet.webp"
+              alt="Spring Bouquet"
+            />
+            <h3>Spring Bouquet</h3>
+            <p>€75</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+
+          <!-- Bouquet 3 -->
+          <div class="bouquet-card">
+            <img
+              src="./assets/images/ready-bouquets/White RosesUpdate.webp"
+              alt="White Roses"
+            />
+            <h3>White Roses</h3>
+            <p>€100</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+
+          <!-- Bouquet 4 -->
+          <div class="bouquet-card">
+            <img
+              src="./assets/images/ready-bouquets/sunshine.webp"
+              alt="Sunshine Tulips"
+            />
+            <h3>Sunshine Tulips</h3>
+            <p>€22</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+
+          <!-- Bouquet 5 -->
+          <div class="bouquet-card">
+            <img
+              src="./assets/images/ready-bouquets/Elegant Lilies.webp"
+              alt="Elegant Lilies"
+            />
+            <h3>Elegant Lilies</h3>
+            <p>€38</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+
+          <!-- Bouquet 6 -->
+          <div class="bouquet-card">
+            <img
+              src="./assets/images/ready-bouquets/Spring Mix.jpg"
+              alt="Spring Mix"
+            />
+            <h3>Spring Mix</h3>
+            <p>€55</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+
+          <!-- Bouquet 7 -->
+          <div class="bouquet-card">
+            <img
+              src="./assets/images/ready-bouquets/Pastel Dreams.webp"
+              alt="Pastel Dreams"
+            />
+            <h3>Pastel Dreams</h3>
+            <p>€50</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+
+          <!-- Bouquet 8 -->
+          <div class="bouquet-card">
+            <img
+              src="./assets/images/ready-bouquets/DRIED LAVENDER BUNCH.webp"
+              alt="Lavender Dreams"
+            />
+            <h3>Lavender Dreams</h3>
+            <p>€75</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Custom bouquet -->
+      <section id="custom-bouquet">
+        <h2>Build Your Own Bouquet</h2>
+        <form id="bouquet-builder">
+          <!-- 15 flower types -->
+          <div class="flower-option">
+            <label>Roses:</label>
+            <select name="rose-color">
+              <option value="red">Red</option>
+              <option value="pink">Pink</option>
+              <option value="white">White</option>
+            </select>
+            <input type="number" name="rose-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Lilies:</label>
+            <select name="lily-color">
+              <option value="white">White</option>
+              <option value="pink">Pink</option>
+            </select>
+            <input type="number" name="lily-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Tulips:</label>
+            <select name="tulip-color">
+              <option value="yellow">Yellow</option>
+              <option value="red">Red</option>
+            </select>
+            <input type="number" name="tulip-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Sunflowers:</label>
+            <select name="sunflower-color">
+              <option value="yellow">Yellow</option>
+            </select>
+            <input type="number" name="sunflower-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Daisies:</label>
+            <select name="daisy-color">
+              <option value="white">White</option>
+              <option value="yellow">Yellow</option>
+            </select>
+            <input type="number" name="daisy-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Orchids:</label>
+            <select name="orchid-color">
+              <option value="purple">Purple</option>
+              <option value="white">White</option>
+            </select>
+            <input type="number" name="orchid-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Peonies:</label>
+            <select name="peony-color">
+              <option value="pink">Pink</option>
+              <option value="white">White</option>
+            </select>
+            <input type="number" name="peony-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Hydrangeas:</label>
+            <select name="hydrangea-color">
+              <option value="blue">Blue</option>
+              <option value="pink">Pink</option>
+            </select>
+            <input type="number" name="hydrangea-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Carnations:</label>
+            <select name="carnation-color">
+              <option value="red">Red</option>
+              <option value="white">White</option>
+            </select>
+            <input type="number" name="carnation-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Irises:</label>
+            <select name="iris-color">
+              <option value="purple">Purple</option>
+              <option value="blue">Blue</option>
+            </select>
+            <input type="number" name="iris-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Chrysanthemums:</label>
+            <select name="chrysanthemum-color">
+              <option value="yellow">Yellow</option>
+              <option value="white">White</option>
+            </select>
+            <input type="number" name="chrysanthemum-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Gardenias:</label>
+            <select name="gardenia-color">
+              <option value="white">White</option>
+            </select>
+            <input type="number" name="gardenia-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Violets:</label>
+            <select name="violet-color">
+              <option value="purple">Purple</option>
+            </select>
+            <input type="number" name="violet-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Marigolds:</label>
+            <select name="marigold-color">
+              <option value="orange">Orange</option>
+            </select>
+            <input type="number" name="marigold-qty" min="0" value="0" />
+          </div>
+
+          <div class="flower-option">
+            <label>Gerberas:</label>
+            <select name="gerbera-color">
+              <option value="pink">Pink</option>
+              <option value="orange">Orange</option>
+            </select>
+            <input type="number" name="gerbera-qty" min="0" value="0" />
+          </div>
+
+          <p>Total Price: <span id="bouquet-price">€0</span></p>
+          <button type="submit">Add to Cart</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Betty Bouquets. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/shop.js"></script>
+  </body>
+</html>
