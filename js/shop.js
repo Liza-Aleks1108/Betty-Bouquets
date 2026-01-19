@@ -68,43 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Собираем данные custom bouquet
-      const order = {
-        type: "Custom Bouquet",
-        items: [],
-        extras: [],
-        total: totalPriceEl.textContent,
-        phone,
-        date: new Date().toISOString(),
-      };
-
-      form.querySelectorAll(".flower-card").forEach((card) => {
-        card.querySelectorAll("input[type='number']").forEach((input) => {
-          const qty = parseInt(input.value) || 0;
-          if (qty > 0) {
-            order.items.push({
-              name: input.dataset.flower,
-              qty,
-              price: parseFloat(input.dataset.price),
-            });
-          }
-        });
-      });
-
-      form.querySelectorAll("input[type='checkbox']").forEach((cb) => {
-        if (cb.checked) {
-          order.extras.push({
-            name: cb.parentNode.textContent.trim(),
-            price: parseFloat(cb.dataset.price),
-          });
-        }
-      });
-
-      saveOrder(order);
       modal.style.display = "none";
       phoneInput.value = "";
       alert(
-        `Thank you! We will contact you at ${phone}. Your order total is ${order.total}`,
+        `Thank you! We will contact you at ${phone}. Your order total is ${price}`,
       );
       form.reset();
       calculateTotal();
@@ -133,15 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
 
-        const order = {
-          type: "Ready Bouquet",
-          name: title,
-          total: price,
-          phone,
-          date: new Date().toISOString(),
-        };
-
-        saveOrder(order);
         modal.style.display = "none";
         phoneInput.value = "";
         alert(
