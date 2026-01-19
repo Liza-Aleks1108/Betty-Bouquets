@@ -126,8 +126,7 @@ header {
 ========================= */
 .footer {
   text-align: center;
-  padding: 24px 16px;
-  font-size: 14px;
+  padding: 1.5rem;
   color: #666;
 }
 

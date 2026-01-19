@@ -381,13 +381,12 @@ h2 {
   background-color: var(--yellow);
   transform: translateY(-2px);
 }
-
 /* =========================
    FOOTER
 ========================= */
 footer {
-  background-color: var(--purple);
-  color: var(--text-light);
+  /* background-color: var(--purple); */
+  color: #666;
   text-align: center;
   padding: 1.5rem;
 }
