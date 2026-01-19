@@ -1,90 +1,84 @@
-/* Main css */
+/* =========================
+   BRAND COLOURS
+========================= */
 :root {
-  /* colors */
-  --primary-color: #a2e8fb;
-  --secondary-color: #f9f5f0;
-  --text-color: #333333;
-  --heading-color: #222222;
-  --button-color: #ff87d5;
-  --button-hover: #e438b9;
+  --yellow: #ffde17;
+  --cream: #faeb90;
+  --orange: #f57e20;
+  --purple: #bf89e9;
 
-  /* navigation */
-  --nav-text-color: var(--secondary-color);
-  --nav-bg-color: var(--primary-color);
-
-  /* hero */
-  --hero-height-mobile: 70vh;
-  --hero-height-tablet: 60vh;
-  --hero-height-desktop: 70vh;
-  --hero-bg-opacity: 0.3;
-
-  /* typography */
-  --font-main: Arial, sans-serif;
+  --bg-main: #fffdf8;
+  --text-main: #444;
+  --text-dark: #222;
+  --text-light: #ffffff;
 }
 
-/* reset styles */
+/* =========================
+   RESET
+========================= */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: var(--font-main);
-  background-color: var(--secondary-color);
-  color: var(--text-color);
+  font-family: system-ui, sans-serif;
+  background-color: #fafafa;
+  color: var(--text-dark);
   line-height: 1.5;
 }
 
-/* header and nav (mobile) */
-header {
-  position: relative;
-}
-
+/* =========================
+   HEADER / NAVIGATION
+========================= */
 header {
   position: relative;
 }
 
 .navbar {
   display: flex;
-  flex-direction: column; /* mobile: menu under logo */
+  flex-direction: column; /* mobile */
   align-items: center;
-  padding: 1rem;
-  background-color: var(--nav-bg-color);
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
 }
-
 .logo {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .logo a {
   text-decoration: none;
-  color: var(--nav-text-color);
+  color: #222;
 }
 
 .nav-links {
-  list-style: none; /* remove default list dots */
+  list-style: none;
   display: flex;
-  flex-direction: column; /* mobile layout */
+  flex-direction: column;
   gap: 1rem;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: var(--nav-text-color);
+  color: #444;
   font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
-}
-
-/* hero (mobile) */
+/* =========================
+   HERO SECTION
+========================= */
 .hero {
   position: relative;
-  height: var(--hero-height-mobile);
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,14 +95,14 @@ header {
   background-image: url("../assets/images/hero.jpg");
   background-size: cover;
   background-position: center;
-  opacity: var(--hero-bg-opacity);
+  opacity: 0.3;
   z-index: -1;
 }
 
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--heading-color);
+  color: var(--text-dark);
 }
 
 .hero p {
@@ -116,83 +110,113 @@ header {
   margin-bottom: 1.5rem;
 }
 
-/* button */
+/* =========================
+   BUTTONS
+========================= */
 .btn {
-  padding: 0.8rem 2rem;
-  background-color: var(--button-color);
-  color: var(--secondary-color);
+  padding: 0.9rem 2.5rem;
+  background-color: var(--orange);
+  color: var(--text-light);
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 30px;
+  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: var(--button-hover);
+  background-color: var(--yellow);
 }
 
-/* about section (mobile) */
+/* =========================
+   ABOUT US SECTION
+========================= */
 .about {
-  background-color: var(--secondary-color);
-  padding: 3rem 1.5rem;
+  background-color: var(--cream);
+  padding: 4rem 1.5rem;
   text-align: center;
+  color: var(--text-main);
 }
 
-/* Welcome block styling */
 .about h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--heading-color);
+  color: var(--text-dark);
   position: relative;
   display: inline-block;
   padding-bottom: 0.5rem;
 }
 
-/* decorative underline */
 .about h2::after {
   content: "";
   display: block;
   width: 60%;
   height: 3px;
   margin: 0.5rem auto 0;
-  background-color: var(--primary-color);
+  background: linear-gradient(90deg, var(--orange), var(--yellow));
   border-radius: 2px;
 }
 
 .about p {
-  max-width: 700px;
-  margin: 1.5rem auto 0;
+  max-width: 750px;
+  margin: 1.5rem auto 2rem;
   font-size: 1rem;
-  color: var(--text-color);
+  line-height: 1.6;
 }
 
-/* about lists */
 .about ul {
-  list-style: none; /* remove dots */
-  margin-top: 1.5rem;
+  list-style: none;
   display: grid;
-  gap: 0.8rem;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .about li {
   background-color: #ffffff;
-  padding: 0.8rem 1rem;
-  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   font-size: 0.95rem;
+  color: var(--text-main);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-/* footer (mobile) */
+.about li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.about a {
+  color: var(--orange);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.about a:hover {
+  color: var(--yellow);
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
-  background-color: var(--nav-bg-color);
-  color: var(--nav-text-color);
+  background-color: var(--purple);
+  color: var(--text-light);
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem 1rem;
   font-size: 0.9rem;
 }
 
-/* table (≥ 768px) */
+/* =========================
+   RESPONSIVE TABLET
+========================= */
 @media (min-width: 768px) {
   .navbar {
-    flex-direction: row; /* logo and menu in one row */
+    flex-direction: row;
     justify-content: space-between;
     padding: 1.5rem 3rem;
   }
@@ -206,7 +230,7 @@ footer {
   }
 
   .hero {
-    height: var(--hero-height-tablet);
+    height: 60vh;
   }
 
   .hero h1 {
@@ -218,11 +242,11 @@ footer {
   }
 
   .about {
-    padding: 4rem 3rem;
+    padding: 5rem 3rem;
   }
 
   .about h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .about ul {
@@ -230,14 +254,16 @@ footer {
   }
 }
 
-/* desktop (≥ 1024px) */
+/* =========================
+   RESPONSIVE DESKTOP
+========================= */
 @media (min-width: 1024px) {
   .navbar {
     padding: 2rem 5rem;
   }
 
   .hero {
-    height: var(--hero-height-desktop);
+    height: 70vh;
   }
 
   .hero h1 {
@@ -249,7 +275,11 @@ footer {
   }
 
   .about {
-    padding: 5rem 10rem;
+    padding: 6rem 10rem;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
   }
 
   .about p {
@@ -257,6 +287,6 @@ footer {
   }
 
   .about ul {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
