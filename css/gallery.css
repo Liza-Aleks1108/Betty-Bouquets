@@ -28,7 +28,9 @@ header {
   display: flex;
   flex-direction: column; /* mobile */
   align-items: center;
-  /* padding: 1.5rem; */
+  padding: 1.5rem;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
   background-color: #ffffff;
   border-bottom: 1px solid #eee;
 }

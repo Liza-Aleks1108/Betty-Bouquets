@@ -4,7 +4,7 @@ const gallery = document.getElementById("gallery");
 
 images.forEach(({ src, alt }) => {
   const img = document.createElement("img");
-  img.src = `assets/images/${src}`;
+  img.src = `assets/images/gallery/${src}`;
   img.alt = alt;
   img.loading = "lazy";
 

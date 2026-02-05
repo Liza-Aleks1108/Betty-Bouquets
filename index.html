@@ -3,27 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Betty Bouquets</title>
-    <link rel="stylesheet" href="css/styles.css" />
+
+    <meta
+      name="description"
+      content="Betty Bouquets is a local florist based in Ballina, Co. Mayo. We have been creating and delivering fresh flower arrangements for over 2 years. Our goal is to combine personal service with modern technology to reach more customers online."
+    />
+    <meta
+      name="keywords"
+      content="flowers, fresh flower arrangements, local florist, bouquet, roses, tulips, lilies, sunflowers, peonies, delivering, flower advice, kind words from our clients"
+    />
+    <meta name="author" content="Betty Bouquets" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
+
+  <!-- Chat bot: Chat with us (Tidio) -->
   <script
     src="//code.tidio.co/pdjxcpw4qja5ggnrp0rz31tthv4k8dfu.js"
     async
   ></script>
+
   <body>
     <!-- HEADER -->
     <header>
       <nav class="navbar">
-        <!-- <div class="logo">Betty Bouquets</div> -->
-        <!-- <div class="logo"><a href="./index.html">Betty Bouquets</a></div> -->
-        <!-- Логотип в навигации -->
+        <!-- <div class="logo"><a href="./index.html"></a></div> -->
         <a href="index.html" class="logo">
           <object
             type="image/svg+xml"
             data="./assets/logo/Betty's Bouquets Graphics.svg"
-            class="logo-svg"
+            class="logo-svg" 
           ></object>
         </a>
+        <!-- <a href="./index.html" class="logo"><img src="./assets/logo/logowhite.png" alt="Betty Bouquets"></a> -->
 
         <ul class="nav-links">
           <li><a href="./index.html">Home</a></li>
@@ -33,119 +49,153 @@
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
-
-      <div class="hero">
-        <h1>Flowers That Speak From the Heart</h1>
-        <p>Thoughtfully designed bouquets for meaningful moments</p>
-        <a href="gallery.html" class="btn">View Collection</a>
-      </div>
     </header>
 
-    <!-- ABOUT / PHILOSOPHY -->
-    <section class="about">
-      <div class="content">
-        <h2>Our Philosophy</h2>
-        <p>
-          At Betty Bouquets, flowers are our language. Every stem is chosen with
-          intention, every bouquet tells a story. We believe beauty should feel
-          natural, emotional, and timeless — just like the moments you celebrate
-          with our flowers.
-        </p>
-      </div>
-    </section>
+    <main>
+      <section class="hero">
+        <div class="hero-slides">
+          <div
+            class="slide active"
+            style="background-image: url(./assets/images/hero/hero.jpg)"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url(./assets/images/hero/hero1.jpg)"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url(./assets/images/hero/hero2.jpg)"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url(./assets/images/hero/hero3.jpg)"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url(./assets/images/hero/hero4.jpg)"
+          ></div>
+        </div>
 
-    <!-- REVIEWS -->
-    <section class="reviews">
-      <div class="content">
-        <h2>Kind Words From Our Clients</h2>
+        <div class="hero-content">
+          <h1>Flowers That Speak From the Heart</h1>
+          <p>Thoughtfully designed bouquets for meaningful moments</p>
+          <a href="./gallery.html" class="btn">View Collection</a>
+        </div>
+      </section>
 
-        <div class="review">
+      <!-- ABOUT / PHILOSOPHY -->
+      <section class="about">
+        <div class="content">
+          <h2>Our Philosophy</h2>
           <p>
-            “The bouquet was elegant and incredibly fresh. You can truly feel
-            the care behind every detail.”
+            At Betty Bouquets, flowers are our language. Every stem is chosen
+            with intention, every bouquet tells a story. We believe beauty
+            should feel natural, emotional, and timeless — just like the moments
+            you celebrate with our flowers.
           </p>
-          <span>— Sarah M.</span>
         </div>
+      </section>
 
-        <div class="review">
-          <p>
-            “Minimal, beautiful, and meaningful. Exactly how flowers should
-            feel.”
+      <!-- REVIEWS -->
+      <section class="reviews">
+        <div class="content">
+          <h2>Kind Words From Our Clients</h2>
+
+          <div class="review">
+            <p>
+              “The bouquet was elegant and incredibly fresh. You can truly feel
+              the care behind every detail.”
+            </p>
+            <span>— Sarah M.</span>
+          </div>
+
+          <div class="review">
+            <p>
+              “Minimal, beautiful, and meaningful. Exactly how flowers should
+              feel.”
+            </p>
+            <span>— James K.</span>
+          </div>
+
+          <div class="review">
+            <p>
+              “Betty Bouquets helped me say what I couldn’t put into words.”
+            </p>
+            <span>— Emily R.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FLOWER ADVICE -->
+      <section class="advice">
+        <div class="content">
+          <h2>Flower Advice</h2>
+          <p class="advice-intro">
+            Choosing flowers is about emotion, not rules. Here are a few gentle
+            tips to guide you.
           </p>
-          <span>— James K.</span>
+
+          <ul class="advice-list">
+            <li>
+              <strong>Red Roses</strong><br />
+              A timeless symbol of deep love and passion. Red roses are often
+              chosen for anniversaries, Valentine’s Day, or meaningful romantic
+              gestures.
+              <em
+                >“I ordered red roses for our anniversary — they said everything
+                I felt without a single word.”</em
+              >
+            </li>
+
+            <li>
+              <strong>Tulips</strong><br />
+              Simple, warm, and sincere. Tulips are perfect for expressing care,
+              appreciation, and gentle affection.
+              <em
+                >“Tulips felt honest and personal. Not too much, just
+                perfect.”</em
+              >
+            </li>
+
+            <li>
+              <strong>Lilies</strong><br />
+              Elegant and expressive, lilies symbolise admiration, respect, and
+              refined beauty. Often chosen for important life moments.
+              <em
+                >“The lilies looked graceful and calm — exactly the mood I
+                wanted.”</em
+              >
+            </li>
+
+            <li>
+              <strong>Sunflowers</strong><br />
+              Bright and uplifting, sunflowers represent happiness, optimism,
+              and positive energy.
+              <em
+                >“The sunflowers instantly brought a smile. They felt like pure
+                joy.”</em
+              >
+            </li>
+
+            <li>
+              <strong>Peonies</strong><br />
+              Soft, romantic, and luxurious. Peonies are associated with love,
+              prosperity, and celebration.
+              <em
+                >“Peonies made the bouquet feel special and unforgettable.”</em
+              >
+            </li>
+          </ul>
         </div>
-
-        <div class="review">
-          <p>“Betty Bouquets helped me say what I couldn’t put into words.”</p>
-          <span>— Emily R.</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- FLOWER ADVICE -->
-    <section class="advice">
-      <div class="content">
-        <h2>Flower Advice</h2>
-        <p class="advice-intro">
-          Choosing flowers is about emotion, not rules. Here are a few gentle
-          tips to guide you.
-        </p>
-
-        <ul class="advice-list">
-          <li>
-            <strong>Red Roses</strong><br />
-            A timeless symbol of deep love and passion. Red roses are often
-            chosen for anniversaries, Valentine’s Day, or meaningful romantic
-            gestures.
-            <em
-              >“I ordered red roses for our anniversary — they said everything I
-              felt without a single word.”</em
-            >
-          </li>
-
-          <li>
-            <strong>Tulips</strong><br />
-            Simple, warm, and sincere. Tulips are perfect for expressing care,
-            appreciation, and gentle affection.
-            <em
-              >“Tulips felt honest and personal. Not too much, just
-              perfect.”</em
-            >
-          </li>
-
-          <li>
-            <strong>Lilies</strong><br />
-            Elegant and expressive, lilies symbolise admiration, respect, and
-            refined beauty. Often chosen for important life moments.
-            <em
-              >“The lilies looked graceful and calm — exactly the mood I
-              wanted.”</em
-            >
-          </li>
-
-          <li>
-            <strong>Sunflowers</strong><br />
-            Bright and uplifting, sunflowers represent happiness, optimism, and
-            positive energy.
-            <em
-              >“The sunflowers instantly brought a smile. They felt like pure
-              joy.”</em
-            >
-          </li>
-
-          <li>
-            <strong>Peonies</strong><br />
-            Soft, romantic, and luxurious. Peonies are associated with love,
-            prosperity, and celebration.
-            <em>“Peonies made the bouquet feel special and unforgettable.”</em>
-          </li>
-        </ul>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer>
       <p>&copy; 2026 Betty Bouquets. All rights reserved.</p>
     </footer>
+
+    <!-- JS -->
+    <script src="./js/hero.js"></script>
   </body>
 </html>
